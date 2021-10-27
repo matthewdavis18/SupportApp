@@ -26,7 +26,7 @@ export default function Home() {
         <div className={styles.grid}>
           <div className={styles.card}>
             <Link href="/ccpa">
-              <h2> i hate taill wind CCPA quickly generate and copy heard delete commands &rarr;</h2>
+              <h2> CCPA quickly generate and copy heard delete commands &rarr;</h2>
             </Link>
           </div>
           <div className={styles.card}>
