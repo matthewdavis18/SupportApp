@@ -7,7 +7,7 @@ const Code = (props) => {
     return props.list.map((result) => {
       return (
         // eslint-disable-next-line react/jsx-key
-        <div className=" border-black mx-5 border-2 px-3 font-mono py-10">
+        <div className="border-black mx-5 border-2 px-3 font-mono py-10">
           getupside account.delete_user -t prod -u {result.uuid} -c 'zd
           {result.ticket}' -e {result.email} --hard
           <Clipboard
