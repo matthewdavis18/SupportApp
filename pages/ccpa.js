@@ -1,5 +1,5 @@
 import fragment from "react";
-import Code from "../Code";
+import Code from "../components/Code";
 import { useState, useEffect } from "react";
 
 const Ccpa = (props) => {
