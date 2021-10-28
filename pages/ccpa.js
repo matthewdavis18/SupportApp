@@ -1,8 +1,13 @@
 import fragment from "react";
 import Code from "../components/Code";
 import { useState, useEffect } from "react";
+import Head from "next/head"
+import Login from "../components/Login";
+import { useRouter } from "next/router";
+
 
 const Ccpa = (props) => {
+  const router = useRouter();
   const [uuids, setUuids] = useState([]);
   const [emails, setEmails] = useState([]);
   const [zdesk, setZdesk] = useState([]);
@@ -42,6 +47,9 @@ const Ccpa = (props) => {
       setGenerateState(true);
     } else console.error("sizes dont match");
   };
+   if (!props.hasReadPermission) {
+     return <Login redirectPath={router.asPath} />;
+   }
 
   return (
     <>
