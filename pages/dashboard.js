@@ -4,7 +4,7 @@
      const init = {
        method: 'get',
        headers: {
-         authorization: process.env.KEY,
+         authorization:process.env.KEY,
          Accept: 'application/json',
        },
      };
